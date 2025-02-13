@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyendok Nyruput</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .order-form {
+            margin-top: 120px; /* Menggeser form ke bawah */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.php" class="brand-logo">
+                <img src="https://i.ibb.co.com/7G0b1Pt/Cokelat-Hijau-Ilustrasi-Logo-Kedai-Kopi-1-removebg-preview.png" alt="Nyendok Nyruput Logo" border="0" class="nav-logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.php">Home</a>
+            <a href="products.php">Produk</a>
+            <a href="register.html">Daftar</a>
+        </div>
+    </nav>
+
+    <section class="order-form">
+        <h2>Login</h2>
+        <form action="process_login.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Belum punya akun? <a href="register.html">Daftar di sini</a>.</p>
+    </section>
+</body>
+</html>
